@@ -1,0 +1,67 @@
+Proceso sin_titulo
+	Escribir "ingrese digito";
+	leer digito;
+	Repetir
+		div11<-digito %11;
+		div12<-digito %12;
+		div13<-digito %13;
+		div14<-digito %14;
+		div15<-digito %15;
+		div16<-digito %16;
+		div17<-digito %17;
+		div18<-digito %18;
+		div19<-digito %19;
+		div20<-digito%20;
+		
+		
+		Si (div11=0) Entonces
+			si (div12=0) Entonces
+				si (div13= 0) entonces
+					si (div14= 0) Entonces
+						si (div15= 0) entonces
+							si (div16= 0) Entonces
+								si (div17=0) Entonces
+									si (div18=0) Entonces
+										si (div19=0) Entonces
+											si (div20=0) entonces
+												Escribir "el numero es divicible por todos los numeros menores a 20";
+											Sino
+												Escribir "el numero no es divicible por 20";
+											FinSi
+										Sino
+											Escribir "el numero no es divicible por 19";
+										FinSi
+									Sino
+										Escribir "el numero no es divicible por 18";
+									FinSi
+								Sino
+									Escribir "el numero no es divicible por 17";
+								FinSi
+							Sino
+								Escribir "el numero no es divicible por 16";
+							FinSi
+						Sino
+							Escribir "el numero no es divicible por 15";
+						FinSi
+					Sino
+						Escribir "el numero no es divicible por 14";
+					FinSi
+				Sino
+					Escribir "el numero no es divicible por 13";
+				FinSi
+			Sino
+				Escribir "el numero no es divicible por 12";
+			FinSi
+		Sino
+			Escribir "el numero no es divicible por 11";
+		FinSi
+		
+		Escribir "el digito es ",digito;
+		digito<-digito+1;
+	Hasta Que (div11=0)&&(div12=0)&&(div13=0)&&(div14=0)&&(div15=0)&&(div16=0)&&(div17=0)&&(div18=0)&&(div19=0)&&(div20=0)
+	Limpiar Pantalla;
+	Escribir "el digito divicible por todos los numeros menores a 20 es:", digito-1;
+	
+	
+	
+FinProceso
