@@ -1,0 +1,33 @@
+Proceso sin_titulo
+	avanceJ1<-0;
+	avanceJ2<-0;
+	avanceJ3<-0;
+	contJ<-0;
+	Escribir "ingrese cantid de juadores.";
+	leer jugadores;
+	Repetir
+		//jugador1
+		dados<-(azar[6]+1)+(azar[6]+1);
+		avanceJ1<-dados+avanceJ1;
+		par<-avanceJ1%2;
+		si (par=0)entonces
+			avanceJ1<-avanceJ1+2;
+		Sino
+			avanceJ1<-avanceJ1-3;
+		FinSi
+		//jugador2
+		dados<-(azar[6]+1)+(azar[6]+1);
+		avanceJ2<-dados+avanceJ1;
+		//jugador3
+		dados<-(azar[6]+1)+(azar[6]+1);
+		avanceJ3<-dados+avanceJ1;
+		
+		//avance total
+		Escribir "avance1 ",avanceJ1;
+		Escribir "avance2 ",avanceJ2;
+		Escribir "avance3 ",avanceJ3;
+		contJ<-contJ+1;
+	Hasta Que (avanceJ1>27)||(avanceJ1>27)||(avanceJ1>27)
+	
+	
+FinProceso
